@@ -47,4 +47,6 @@ eureka:
 
 
 
+helper:
+  message: Local
 
