@@ -26,6 +26,9 @@ springdoc:
     path: /docs
 
 
+helper:
+  message: Main msessage
+
 eureka:
   client:
     register-with-eureka: false

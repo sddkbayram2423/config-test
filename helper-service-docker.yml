@@ -51,4 +51,6 @@ eureka:
 
 
 
+helper:
+  message: Docker msessage
 
