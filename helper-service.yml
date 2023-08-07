@@ -1,0 +1,40 @@
+
+server:
+  port: 5006
+  servlet:
+    session:
+      cookie:
+        http-only: true
+  error:
+    include-stacktrace: never
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: helper-service
+  devtools:
+    restart:
+      enabled: true
+  output:
+    ansi:
+      enabled: always
+
+
+springdoc:
+  swagger-ui:
+    path: /docs
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:5001/eureka/
+
+
+
+
+
+
