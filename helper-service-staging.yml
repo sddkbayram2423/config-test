@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ipay?serverTimezone=Turkey&useSSL=false&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: 1234
+
+helper:
+  message: Staging msessage
+

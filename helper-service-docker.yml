@@ -1,54 +1,8 @@
-
-server:
-  port: 5006
-  servlet:
-    session:
-      cookie:
-        http-only: true
-  error:
-    include-stacktrace: never
-
 spring:
-  application:
-    name: helper-service
-  devtools:
-    restart:
-      enabled: true
-  output:
-    ansi:
-      enabled: always
-  ##MYSQL DATABASE CONNECTION CONFIG
   datasource:
     url: jdbc:mysql://mysql-db:3306/ipay?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: 1234
-  jpa:
-    show-sql: true
-    database-platform: org.hibernate.dialect.MySQLDialect
-    database: mysql
-    hibernate:
-      ddl-auto: update
-    properties:
-      show_sql: true
-      format_sql: false
-
-
-springdoc:
-  swagger-ui:
-    path: /docs
-
-
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${random.uuid}
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://discover:5001/eureka/
-
-
-
 
 
 helper:
