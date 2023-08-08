@@ -9,8 +9,8 @@ server:
     include-stacktrace: never
 
 spring:
-  profiles:
-    active: dev
+  # profiles:
+  #   active: dev
   application:
     name: helper-service
   devtools:
