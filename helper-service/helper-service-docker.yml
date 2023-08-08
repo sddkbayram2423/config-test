@@ -4,7 +4,3 @@ spring:
     username: root
     password: 1234
 
-
-helper:
-  message: Docker msessage
-
